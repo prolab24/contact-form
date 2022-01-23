@@ -1,0 +1,158 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+body{
+    background-image: url(../image/bg.jpg);
+    background-size: cover;
+}
+
+.content
+{
+    padding: 30px 40px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.content-box h1, .form-right h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.content h1,p{
+    margin-bottom: 5px;
+}
+.content p{
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+}
+.content-box
+{
+    display: flex;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    box-shadow: 1px 1px 15px orange,-1px -1px 15px black;
+}
+
+.content-box .form-left h1, .content-box .form-left h2{
+    margin-bottom: 10px;
+}
+.form-left{
+    flex-basis: 60%;
+    padding: 40px 40px 30px 40px;
+}
+
+.form-right{
+    flex-basis: 42%;
+    padding: 60px 40px;
+    background-color: rgb(240, 163, 21)
+}
+
+
+.input-blows
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.input-blows .input-column{
+    flex-basis: 40%;
+}
+label{
+    line-height: 2em;
+}
+
+input{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: transparent;
+    padding-bottom: 7px;
+}
+
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding:15px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button{
+    border:none;
+    outline:none;
+    background-color: blue;
+    padding: 15px 40px;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-right h2
+{
+    font-family: 'Tinos', serif;
+    margin-top: 15px;
+    margin-bottom: 14px;
+}
+
+table,tr,td{
+    width: 90%;
+}
+td{
+    padding: 10px;
+    padding-left: 0px;
+}
+
+@media(max-width:550px){
+    .content{
+        width: 96.5%;
+    }
+    .content-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .form-left{
+        flex-basis: 100%;
+        padding: 20px 15px 20px 15px;
+        box-sizing: border-box;
+    }
+    .form-right{
+        flex-basis: 100%;
+        box-sizing: border-box;
+    }
+    .input-blows .input-column{
+        flex-basis: 45%;
+    }
+    label{
+        line-height: 1em;
+    }
+    
+    input{
+        font-size: 11px;
+    }  
+    button{
+        margin-left: 90px;
+        margin-bottom: 0px;
+    }    
+    .form-right{
+        padding: 20px 0px 20px 40px;
+    }
+    table{
+        padding-bottom: 20px;
+    }
+    table,tr,td{
+        width: 90%;
+    }
+    td{
+        padding: 0px;
+        padding-left: 0px;
+    }
+
+}
