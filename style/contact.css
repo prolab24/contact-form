@@ -127,6 +127,10 @@ td{
         flex-basis: 100%;
         box-sizing: border-box;
     }
+    .resp-center{
+        display: flex;
+        justify-content: center;
+    }
     .input-blows .input-column{
         flex-basis: 45%;
     }
